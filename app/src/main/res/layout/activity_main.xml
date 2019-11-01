@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.developer.otpreaderkotlin.otpReader.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:itemBackground="@drawable/bg_otp_item"
+        app:hideLineWhenFilled="true"
+        app:itemCount="4"
+        app:itemSpacing="6dp"
+        app:lineColor="@color/colorPrimary"
+        app:state_filled="true"
+        app:viewType="line" />
+
+
+</LinearLayout>
